@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1779</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1801</width>
+      <height>971</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>ez_hard.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_game">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>350</y>
+      <width>441</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT Black</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;НАЧАТЬ ИГРУ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(217, 217, 217);
+</string>
+    </property>
+    <property name="text">
+     <string>НАЧАТЬ ИГРУ</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rules_game">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>500</y>
+      <width>441</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT Black</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;НАЧАТЬ ИГРУ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(217, 217, 217);</string>
+    </property>
+    <property name="text">
+     <string>ОБ ИГРЕ</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit_game">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>650</y>
+      <width>441</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT Black</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;НАЧАТЬ ИГРУ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(217, 217, 217);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>ВЫХОД</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
