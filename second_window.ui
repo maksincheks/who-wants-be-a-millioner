@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sec_window</class>
+ <widget class="QMainWindow" name="sec_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1800</width>
+    <height>989</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1800</width>
+      <height>950</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>03RESED (1).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="school_but">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>350</y>
+      <width>360</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: black;
+    background-color: transparent;
+}
+
+QPushButton:hover {
+	background-color: rgb(238, 238, 238); /* тёмно-белый цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: white; /* белый цвет при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ШКОЛЬНИК</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="student_but">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>500</y>
+      <width>360</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: black;
+    background-color: transparent;
+}
+
+QPushButton:hover {
+	background-color: rgb(238, 238, 238); /* тёмно-белый цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: white; /* белый цвет при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>СТУДЕНТ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="genius_but">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>650</y>
+      <width>360</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: black;
+    background-color: transparent;
+}
+
+QPushButton:hover {
+	background-color: rgb(238, 238, 238); /* тёмно-белый цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: white; /* белый цвет при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ГЕНИЙ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_second">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>1</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+}
+
+QPushButton:pressed {
+    padding-left: 5px; /* сдвигаем изображение влево при нажатии */
+    padding-top: 5px; /* сдвигаем изображение вверх при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>back_rules.png</normaloff>back_rules.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
