@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GlavWindow</class>
+ <widget class="QMainWindow" name="GlavWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>1078</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-2</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>image/fon_game.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task_A">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>680</y>
+      <width>820</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#task_A {
+    border-radius: 50px;
+	background-color: rgb(0, 0, 58);
+	color: rgb(255, 255, 255);
+    width: 100px;
+    height: 58px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>сюда вводить текст ответов</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task_B">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>680</y>
+      <width>820</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#task_B {
+	color: rgb(255, 255, 255);
+    border-radius: 50px;
+	background-color: rgb(0, 0, 58);
+    width: 100px;
+    height: 58px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}</string>
+    </property>
+    <property name="text">
+     <string>сюда вводить текст</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task_D">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>830</y>
+      <width>820</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#task_D {
+	color: rgb(255, 255, 255);
+    border-radius: 50px;
+	background-color: rgb(0, 0, 58);
+    width: 100px;
+    height: 58px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}</string>
+    </property>
+    <property name="text">
+     <string>сюда вводить текст</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task_C">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>830</y>
+      <width>820</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#task_C {
+	color: rgb(255, 255, 255);
+    border-radius: 50px;
+	background-color: rgb(0, 0, 58);
+    width: 100px;
+    height: 58px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}</string>
+    </property>
+    <property name="text">
+     <string>сюда вводить текст</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 40px;
+    padding: 5px;
+}
+
+QPushButton:pressed {
+    background-color: #c8c8c8;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>image/settings.png</normaloff>image/settings.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hint_1">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>20</y>
+      <width>180</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+    border-radius: 20px; 
+	background-color: rgb(170, 0, 255);
+}
+QPushButton:pressed {
+	background-color: #f39c12; /* Цвет кнопки при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string>50/50</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>150</width>
+      <height>150</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hint_2">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>20</y>
+      <width>180</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+    border-radius: 20px; 
+	background-color: rgb(170, 0, 255);
+}
+QPushButton:pressed {
+	background-color: #f39c12; /* Цвет кнопки при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string>ЗВОНОК ДРУГУ</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>150</width>
+      <height>150</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hint_3">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>20</y>
+      <width>180</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+    border-radius: 20px; 
+	background-color: rgb(170, 0, 255);
+}
+QPushButton:pressed {
+	background-color: #f39c12; /* Цвет кнопки при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string>ЗАМЕНА ВОПРОСА</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>150</width>
+      <height>150</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vvod_task">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>150</y>
+      <width>800</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    border-radius: 40px;
+	background-color: rgb(0, 0, 58);
+	color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>СЮДА ВВОДИТЬ ТЕКСТ</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
