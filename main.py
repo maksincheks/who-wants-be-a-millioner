@@ -1,13 +1,12 @@
 import sys
+import random
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QLabel
-from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
-from PyQt5.QtCore import QUrl
-from PyQt5.QtMultimedia import QSoundEffect
-from random import shuffle, sample, choice
-import random
+from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent, QSoundEffect
+from PyQt5.QtCore import QUrl, QTimer
 from PyQt5.QtGui import QMovie
-from PyQt5.QtCore import QTimer
+from random import shuffle, sample, choice
+
 
 
 class GameWindow(QMainWindow):
@@ -24,23 +23,21 @@ class GameWindow(QMainWindow):
         self.game_widget.setObjectName("game_widget")
 
         self.media_player = QMediaPlayer()
-        self.media_player.setMedia(QMediaContent(QUrl.fromLocalFile("sounds/game_process.mp3")))
-        self.media_player.setVolume(100)
+        self.media_player.setMedia(QMediaContent(QUrl.fromLocalFile("sounds/main_song.mp3")))
+        self.media_player.setVolume(25)
         self.timer = QTimer()
         self.timer.setSingleShot(True)
         self.timer.start(500)
         self.timer.timeout.connect(self.play_music)
 
-        # Установите интервал времени в 2000 миллисекунд (2 секунды) и запустите таймер
-        self.timer.start(2000)
 
         self.button_click_sound_set = QSoundEffect()
         self.button_click_sound_set.setSource(QUrl.fromLocalFile("sounds/button.wav"))
-        self.button_click_sound_set.setVolume(0.3)
+        self.button_click_sound_set.setVolume(0.15)
 
         self.button_click_sound_5050 = QSoundEffect()
         self.button_click_sound_5050.setSource(QUrl.fromLocalFile("sounds/hint_5050.wav"))
-        self.button_click_sound_5050.setVolume(0.3)
+        self.button_click_sound_5050.setVolume(0.15)
 
         self.fon_main = QtWidgets.QLabel(self.game_widget)
         self.fon_main.setGeometry(QtCore.QRect(0, 0, 1920, 1080))
@@ -479,9 +476,9 @@ class GameWindow(QMainWindow):
             self.lose_text.setGeometry(765, 340, 600, 200)
             self.lose_text.setObjectName('lose_text')
 
-            if self.total_money >= 32000:
+            if self.total_money >= 64000:
                 self.lose_text.setText('К сожалению, вы проиграли\n\n'
-                                       'Ваш выигрыш: ₽32 000\n\n'
+                                       'Ваш выигрыш: ₽64 000\n\n'
                                        'Правильный ответ: {}'.format(self.correct_answer))
                 self.hint_1.setEnabled(False)
                 self.hint_2.setEnabled(False)
@@ -737,6 +734,15 @@ class Take_level(QMainWindow):
 
         self.game_window = GameWindow
 
+        self.button_click_sound_set = QSoundEffect()
+        self.button_click_sound_set.setSource(QUrl.fromLocalFile("sounds/button.wav"))
+        self.button_click_sound_set.setVolume(0.15)
+
+        self.media_player_take = QMediaPlayer()
+        self.media_player_take.setMedia(QMediaContent(QUrl.fromLocalFile("sounds/main.mp3")))
+        self.media_player_take.setVolume(25)
+        #self.media_player_take.play()
+
         self.school_but = QtWidgets.QPushButton(self.level_widget)
         self.school_but.setGeometry(QtCore.QRect(50, 850, 360, 140))
         font = QtGui.QFont()
@@ -908,23 +914,31 @@ class Take_level(QMainWindow):
         self.takelevel.setStyleSheet(style)
 
     def open_game_school(self, filename):
-        filename = "questions.txt"  # Укажите здесь имя файла с вопросами
-        new_widget = GameWindow(filename)  # Передайте имя файла при создании объекта GameWindow
+        self.button_click_sound_set.play()
+        filename = "questions.txt"
+        new_widget = GameWindow(filename)
         self.setCentralWidget(new_widget)
+        self.media_player_take.stop()
 
     def open_game_student(self):
-        filename = "questions1.txt"  # Укажите здесь имя файла с вопросами
-        new_widget = GameWindow(filename)  # Передайте имя файла при создании объекта GameWindow
+        filename = "questions1.txt"
+        new_widget = GameWindow(filename)
         self.setCentralWidget(new_widget)
+        self.media_player_take.stop()
+        self.button_click_sound_set.play()
 
     def open_game_genius(self):
-        filename = "questions2.txt"  # Укажите здесь имя файла с вопросами
-        new_widget = GameWindow(filename)  # Передайте имя файла при создании объекта GameWindow
+        filename = "questions2.txt"
+        new_widget = GameWindow(filename)
         self.setCentralWidget(new_widget)
+        self.media_player_take.stop()
+        self.button_click_sound_set.play()
 
     def back_to_menu(self):
         back_widget = MainWindow()
         self.setCentralWidget(back_widget)
+        self.media_player_take.stop()
+        self.button_click_sound_set.play()
 
 
 class MainWindow(QMainWindow):
@@ -940,9 +954,13 @@ class MainWindow(QMainWindow):
 
         self.level_widget = Take_level()
 
+        self.button_click_sound_set = QSoundEffect()
+        self.button_click_sound_set.setSource(QUrl.fromLocalFile("sounds/button.wav"))
+        self.button_click_sound_set.setVolume(0.15)
+
         self.media_player_main = QMediaPlayer()
         self.media_player_main.setMedia(QMediaContent(QUrl.fromLocalFile("sounds/main.mp3")))
-        self.media_player_main.setVolume(100)
+        self.media_player_main.setVolume(25)
         self.media_player_main.play()
 
         self.start_game = QtWidgets.QPushButton(self.menu_widget)
@@ -1128,6 +1146,7 @@ class MainWindow(QMainWindow):
         self.start_game.setEnabled(False)
         self.rules_game.setEnabled(False)
         self.exit_game.setEnabled(False)
+        self.button_click_sound_set.play()
 
 
     def closeRules(self):
@@ -1136,8 +1155,10 @@ class MainWindow(QMainWindow):
         self.start_game.setEnabled(True)
         self.rules_game.setEnabled(True)
         self.exit_game.setEnabled(True)
+        self.button_click_sound_set.play()
 
     def switch_widget(self):
+        self.button_click_sound_set.play()
         sec_widget = Take_level()
         self.setCentralWidget(sec_widget)
         self.media_player_main.stop()
@@ -1147,9 +1168,11 @@ class MainWindow(QMainWindow):
         self.exit_text.show()
         self.exit_text_yes.show()
         self.exit_text_no.show()
+        self.button_click_sound_set.play()
 
         def exit_game():
             sys.exit()
+            self.button_click_sound_set.play()
 
         self.exit_text_yes.clicked.connect(exit_game)
 
@@ -1158,6 +1181,7 @@ class MainWindow(QMainWindow):
             self.exit_text.hide()
             self.exit_text_yes.hide()
             self.exit_text_no.hide()
+            self.button_click_sound_set.play()
 
         self.exit_text_no.clicked.connect(continue_game)
 
